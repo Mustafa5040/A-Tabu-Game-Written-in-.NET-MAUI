@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="Tabu.SettingsPage"
+             Title="Ayarlar">
+    <Grid>
+        <Image Source="bgg.jpg" Aspect="AspectFill" HorizontalOptions="Start"/>
+        <VerticalStackLayout Margin="20" VerticalOptions="Center">
+            <Label x:Name="SettingsTestLabel" Text="TEST" />
+            <Label Text="{Binding Source={x:Reference TimeSlider},Path=Value,StringFormat='Oyun Süresi: {0:F0} saniye'}" FontSize="30" Margin="5" />
+            <Slider x:Name="TimeSlider" Maximum="180" Minimum="30" ThumbColor="Blue" MinimumTrackColor="Blue" ValueChanged="TimeSlider_ValueChanged" />
+
+            <Label Text="{Binding Source={x:Reference PassSlider},Path=Value,StringFormat='Pas Hakkı: {0:F0} tane'}" FontSize="25" Margin="5" />
+            <Slider x:Name="PassSlider" Maximum="5" Minimum="0" ThumbColor="Orange" MinimumTrackColor="Orange" ValueChanged="PassSlider_ValueChanged" />
+
+            <Label Text="{Binding Source={x:Reference TabuSlider},Path=Value,StringFormat='Tabu Puanı: -{0:F0} puan'}" FontSize="25" Margin="5" />
+            <Slider x:Name="TabuSlider" Maximum="5" Minimum="1" ThumbColor="Green" MinimumTrackColor="Green" ValueChanged="TabuSlider_ValueChanged" />
+
+            <Label Text="{Binding Source={x:Reference WinningScoreSlider},Path=Value,StringFormat='Kazanma Puanı: {0:F0} puan'}" FontSize="25" Margin="5" />
+            <Slider x:Name="WinningScoreSlider" Maximum="180" Minimum="30" ThumbColor="Red" MinimumTrackColor="Red" ValueChanged="WinningScoreSlider_ValueChanged" />
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Arka Plan Müziği" FontSize="25" VerticalOptions="Center"/>
+                <Switch x:Name="BackgroundMusicSwitch"  OnColor="BlueViolet" ThumbColor="Aquamarine" Toggled="BackgroundMusicSwitch_Toggled" VerticalOptions="Center" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </Grid>
+    
+</ContentPage>

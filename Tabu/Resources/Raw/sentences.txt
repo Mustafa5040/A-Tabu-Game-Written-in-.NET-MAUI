@@ -1,0 +1,5 @@
+Fiil,İş,Oluş,Hareket,Eylem,Sözcük
+Kuşbakışı,Harita,Tepe,Yukarı,Görmek,Kroki
+Armağan,Hediye,Vermek,Almak,Doğum Günü,Sevinmek/Mutlu Olmak
+Şiir,Şair,Mısra,Dize,Kıta,Dörtlük
+Uyak,Şiir,Dize,Benzerlik,Kafiye,Ses

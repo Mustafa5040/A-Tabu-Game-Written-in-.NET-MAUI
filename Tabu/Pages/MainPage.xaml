@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Shell.NavBarIsVisible="False" 
+             BackgroundImageSource="bgg.jpg"
+             x:Class="Tabu.MainPage">
+    <Grid >
+        <Image Source="bgg.jpg" Aspect="AspectFill" HorizontalOptions="Start"/>
+        <StackLayout x:Name="MainStackLayout" VerticalOptions="Center" Spacing="10" WidthRequest="200" >
+            <Image x:Name="MainTabuLogoImage" Source="tabu_logo.png" />
+            <Button x:Name="StartButton" Text="BAŞLA" HeightRequest="60" BackgroundColor="Blue" TextColor="White" Clicked="StartButton_Clicked" />
+            <Button x:Name="SettingsButton" Text="AYARLAR" HeightRequest="60" BackgroundColor="Orange" TextColor="White" Clicked="SettingsButton_Clicked" />
+            <Button x:Name="ScorsButton" Text="SKORLAR" HeightRequest="60" BackgroundColor="Green" TextColor="White" />
+            <Button x:Name="HowToPlayButton" Text="NASIL OYNANIR" HeightRequest="60" BackgroundColor="Red" TextColor="White" Clicked="HowToPlayButton_Clicked" />
+            <Button x:Name="AboutButton" Text="HAKKINDA" HeightRequest="60" BackgroundColor="BlueViolet" TextColor="White" Clicked="AboutButton_Clicked" />
+        </StackLayout>
+    </Grid>  
+   
+                 
+
+</ContentPage>
