@@ -1,6 +1,5 @@
 namespace Tabu.Pages;
 
-using System.Collections;
 using System.Diagnostics;
 using System.Reflection;
 using System.Threading;
@@ -23,14 +22,17 @@ public partial class GamePage : ContentPage
     public string[] lines;
     Random random = new Random();
     public int pass_right = Preferences.Get("pass_right", 3);
+    public bool is_exit_confirmed;
+
 
     public GamePage()
     {
         InitializeComponent();
+        _application.BackgroundAudioView._player.Pause();
         NavigationPage.SetHasNavigationBar(this, false);
         UpdateArc();
         ReadLines();
-        if (utilities.IsDual(_application.Round))
+        if (!utilities.IsDual(_application.Round))
         {
             TeamNameLabel.Text = _application.TeamOne.TeamName;
             CurrentPointLabel.Text = "PUAN: " + _application.TeamOne.CurrentPoints;
@@ -38,13 +40,36 @@ public partial class GamePage : ContentPage
         else
         {
             TeamNameLabel.Text = _application.TeamTwo.TeamName;
+            CurrentPointLabel.Text = "PUAN: " + _application.TeamTwo.CurrentPoints;
         }
+        PassButton.Text = "PAS " + Preferences.Get("pass_right", 3);
     }
     protected override void OnAppearing()
     {
         base.OnAppearing();
-
         ProgressView.Drawable = _progressArc;
+
+    }
+
+    protected override bool OnBackButtonPressed()
+    {
+        Dispatcher.Dispatch(async () =>
+        {
+            bool leave = await DisplayAlert("Ana Ekran Dön?", "Oyunu bitirip ana ekrana dönmek istediðinizden emin misiniz?", "Evet", "Hayýr");
+
+            if (leave)
+            {
+                _application.TeamOne.FullReset();
+                _application.TeamTwo.FullReset();
+                _application.Round = 1;
+                _application.lineDataList.Clear();
+                _cancellationTokenSource.Cancel();
+                _application._islinesread = false;
+                await Navigation.PushAsync(new MainPage());
+            }
+        });
+
+        return true;
     }
     private async void UpdateArc()
     {
@@ -62,7 +87,7 @@ public partial class GamePage : ContentPage
                 }
                 catch (TaskCanceledException)
                 {
-                    // Do nothing, just continue the loop
+                    // Do nothing, just continue the loop.
                 }
 
                 continue;
@@ -129,32 +154,27 @@ public partial class GamePage : ContentPage
 
     private async void ReadLines()
     {
-        var assembly = typeof(MainPage).GetTypeInfo().Assembly;
+        Assembly assembly = typeof(MainPage).GetTypeInfo().Assembly;
         Stream stream = await FileSystem.OpenAppPackageFileAsync("sentences.txt");
         using (StreamReader reader = new StreamReader(stream))
         {
             lines = reader.ReadToEnd().Split('\n');
-            for (int s = 0; s < lines.Length - 1; s++)
+            if (!_application._islinesread)
             {
-                Debug.WriteLine(lines[s]);
+                GetLinesFromText();
+                _application._islinesread = true;
             }
-
-            GetLinesFromText();
             ChooseWords();
         }
     }
     private void GetLinesFromText()
     {
-        var allList = new ArrayList();
         for (int line = 0; line < lines.Length; line++)
         {
-            var current_line = lines[line];
+            string current_line = lines[line];
             char[] seperator = { ',' };
             String[] strlist = current_line.Split(seperator, StringSplitOptions.RemoveEmptyEntries);
             SentenceDataModel datamodel = new SentenceDataModel();
-            Debug.WriteLine("LENGTH");
-            Debug.WriteLine(strlist.Length);
-
             datamodel.GuessWord = strlist[0];
             datamodel.TabuWord1 = strlist[1];
             datamodel.TabuWord2 = strlist[2];
@@ -162,7 +182,6 @@ public partial class GamePage : ContentPage
             datamodel.TabuWord4 = strlist[4];
             datamodel.TabuWord5 = strlist[5];
             datamodel.IsUsed = false;
-
             _application.lineDataList.Add(datamodel);
         }
     }
@@ -170,38 +189,19 @@ public partial class GamePage : ContentPage
     {
         Debug.WriteLine("CHoose word syaty");
         int index = random.Next(_application.lineDataList.Count);
-        var selectedItem = _application.lineDataList[index];
+        SentenceDataModel selectedItem = _application.lineDataList[index];
         Debug.WriteLine(selectedItem);
-        foreach (var item in _application.lineDataList)
-        {
-            Debug.WriteLine("GuessWord: " + item.GuessWord);
-            Debug.WriteLine("TabuWord1: " + item.TabuWord1);
-            Debug.WriteLine("TabuWord2: " + item.TabuWord2);
-            Debug.WriteLine("TabuWord3: " + item.TabuWord3);
-            Debug.WriteLine("TabuWord4: " + item.TabuWord4);
-            Debug.WriteLine("TabuWord5: " + item.TabuWord5);
-        }
         if (!selectedItem.IsUsed)
         {
             Debug.WriteLine("CHOOSE WORDS INSIDE");
             if (!string.IsNullOrEmpty(selectedItem.GuessWord) && selectedItem != null)
             {
-                Debug.WriteLine("CHOOSE WORDS INSIDE");
-                Debug.WriteLine(selectedItem.GuessWord);
-                Debug.WriteLine(selectedItem.TabuWord1);
-                Debug.WriteLine(selectedItem.TabuWord2);
-                Debug.WriteLine(selectedItem.TabuWord3);
-                Debug.WriteLine(selectedItem.TabuWord4);
-                Debug.WriteLine(selectedItem.TabuWord5);
                 GuessButon.Text = selectedItem.GuessWord;
                 TabuWord1Button.Text = selectedItem.TabuWord1;
                 TabuWord2Button.Text = selectedItem.TabuWord2;
                 TabuWord3Button.Text = selectedItem.TabuWord3;
                 TabuWord4Button.Text = selectedItem.TabuWord4;
                 TabuWord5Button.Text = selectedItem.TabuWord5;
-                Debug.WriteLine("AFTER TEXT START");
-                Debug.WriteLine(TabuWord1Button.Text);
-                Debug.WriteLine("AFTER TEXT END");
                 selectedItem.IsUsed = true;
             }
             else
@@ -220,11 +220,11 @@ public partial class GamePage : ContentPage
     {
         if (!_isPaused)
         {
-            if (utilities.IsDual(_application.Round))
+            if (!utilities.IsDual(_application.Round))
             {
                 _application.TeamOne.CurrentPoints++;
                 _application.TeamOne.log.Add("true");
-                CurrentPointLabel.Text = "PUAN:" + _application.TeamOne.CurrentPoints.ToString();
+                CurrentPointLabel.Text = "PUAN: " + _application.TeamOne.CurrentPoints.ToString();
             }
             else
             {
@@ -241,7 +241,7 @@ public partial class GamePage : ContentPage
     {
         if (!_isPaused)
         {
-            if (utilities.IsDual(_application.Round))
+            if (!utilities.IsDual(_application.Round))
             {
                 _application.TeamOne.CurrentPoints -= Preferences.Get("tabuu_point", 3);
                 CurrentPointLabel.Text = "PUAN: " + _application.TeamOne.CurrentPoints.ToString();
@@ -251,7 +251,7 @@ public partial class GamePage : ContentPage
             {
                 _application.TeamTwo.CurrentPoints -= Preferences.Get("tabuu_point", 3);
                 CurrentPointLabel.Text = "PUAN: " + _application.TeamTwo.CurrentPoints.ToString();
-                _application.TeamTwo.log.Add("pass");
+                _application.TeamTwo.log.Add("tabu");
             }
             ChooseWords();
         }
@@ -264,7 +264,7 @@ public partial class GamePage : ContentPage
         {
             if (pass_right != 0)
             {
-                if (utilities.IsDual(_application.Round))
+                if (!utilities.IsDual(_application.Round))
                 {
                     _application.TeamOne.log.Add("pass");
                 }
@@ -273,6 +273,7 @@ public partial class GamePage : ContentPage
                     _application.TeamTwo.log.Add("pass");
                 }
                 pass_right -= 1;
+                PassButton.Text = "PAS " + pass_right.ToString();
                 ChooseWords();
             }
 
@@ -282,24 +283,36 @@ public partial class GamePage : ContentPage
     }
     private void RoundOver()
     {
-        if (utilities.IsDual(_application.Round))
+        Debug.WriteLine(Preferences.Get("winning_point", 75));
+        if (!utilities.IsDual(_application.Round))
         {
             _application.TeamOne.ApplyRoundPoints();
+            _application.Round++;
+            pass_right = Preferences.Get("pass_right", 3);
+            if (_application.TeamOne.TotalPoints >= Preferences.Get("winning_point", 75))
+            {
+                Navigation.PushAsync(new GameOverPage());
+            }
+            else
+            {
+                Navigation.PushAsync(new RoundResultsPage());
+            }
         }
         else
         {
             _application.TeamTwo.ApplyRoundPoints();
-        }
-        if(_application.TeamOne.TotalPoints >= Preferences.Get("winning_point", 75) || _application.TeamTwo.TotalPoints >= Preferences.Get("winning_point", 75))
-        {
-            SomeoneWonGame();
-        }
-        pass_right = Preferences.Get("pass_right", 3);
-        _application.Round++;
-    }
+            _application.Round++;
+            pass_right = Preferences.Get("pass_right", 3);
+            if (_application.TeamTwo.TotalPoints >= Preferences.Get("winning_point", 75))
+            {
+                Navigation.PushAsync(new GameOverPage());
+            }
+            else
+            {
+                Navigation.PushAsync(new RoundResultsPage());
+            }
 
-    private void SomeoneWonGame()
-    {
+        }
 
     }
 }

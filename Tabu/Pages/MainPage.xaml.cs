@@ -1,7 +1,4 @@
-﻿using Plugin.Maui.Audio;
-using System.Diagnostics;
-using Tabu.Pages;
-using Tabu.ViewModels;
+﻿using Tabu.Pages;
 
 namespace Tabu;
 
@@ -12,6 +9,11 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         NavigationPage.SetHasNavigationBar(this, false);
+    }
+    protected override bool OnBackButtonPressed()
+    {
+        // Return true to prevent the back button from navigating back
+        return true;
     }
     private void AboutButton_Clicked(object sender, EventArgs e)
     {

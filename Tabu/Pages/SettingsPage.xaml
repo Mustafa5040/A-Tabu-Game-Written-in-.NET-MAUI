@@ -7,7 +7,7 @@
     <Grid>
         <Image Source="bgg.jpg" Aspect="AspectFill" HorizontalOptions="Start"/>
         <VerticalStackLayout Margin="20" VerticalOptions="Center">
-            <Label x:Name="SettingsTestLabel" Text="TEST" />
+            <Label x:Name="SettingsTestLabel" Text="TEST" IsVisible="false" />
             <Label Text="{Binding Source={x:Reference TimeSlider},Path=Value,StringFormat='Oyun Süresi: {0:F0} saniye'}" FontSize="30" Margin="5" />
             <Slider x:Name="TimeSlider" Maximum="180" Minimum="30" ThumbColor="Blue" MinimumTrackColor="Blue" ValueChanged="TimeSlider_ValueChanged" />
 

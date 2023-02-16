@@ -10,16 +10,17 @@
         public void CurrentReset()
         {
             CurrentPoints = 0;
+            log.Clear();
         }
         public void FullReset()
         {
             CurrentPoints = 0;
             TotalPoints = 0;
+            log.Clear();
         }
         public void ApplyRoundPoints()
         {
             TotalPoints = TotalPoints + CurrentPoints;
-            CurrentReset();
 
         }
     }

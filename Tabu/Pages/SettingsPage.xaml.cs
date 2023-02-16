@@ -11,7 +11,7 @@ public partial class SettingsPage : ContentPage
         WinningScoreSlider.Value = Preferences.Get("winning_score", 75);
         PassSlider.Value = Preferences.Get("pass_right", 3);
         TabuSlider.Value = Preferences.Get("tabuu_point", 3);
-        BackgroundMusicSwitch.IsToggled = Preferences.Get("background_music_state", true);
+        BackgroundMusicSwitch.IsToggled = Preferences.Get("background_music_state", false);
     }
 
     private void TimeSlider_ValueChanged(object sender, ValueChangedEventArgs e)
@@ -22,8 +22,8 @@ public partial class SettingsPage : ContentPage
 
     private void WinningScoreSlider_ValueChanged(object sender, ValueChangedEventArgs e)
     {
-        Preferences.Set("winning_score", Convert.ToInt32(e.NewValue));
-        SettingsTestLabel.Text = "Winning Score" + e.NewValue.ToString();
+        Preferences.Set("winning_point", Convert.ToInt32(e.NewValue));
+        SettingsTestLabel.Text = "winning_point Score" + e.NewValue.ToString(); //for debugging.
     }
 
     private void TabuSlider_ValueChanged(object sender, ValueChangedEventArgs e)
@@ -40,7 +40,7 @@ public partial class SettingsPage : ContentPage
 
     private void BackgroundMusicSwitch_Toggled(object sender, ToggledEventArgs e)
     {
-        var _application = ((App)Application.Current);
+        App _application = (App)Application.Current;
         Preferences.Set("background_music_state", e.Value);
 
         if (e.Value && !_application.BackgroundAudioView.IsPlaying())

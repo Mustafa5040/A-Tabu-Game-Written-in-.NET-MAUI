@@ -9,9 +9,9 @@
         <VerticalStackLayout VerticalOptions="Center" WidthRequest="200" Margin="20" Spacing="20" >
             <Label Text="1.TAKIMIN ADI:" />
             <Entry x:Name="TeamOneEntry" Text="TAKIM A"  />
-            <Label Text="2.TAKIMIN ADI:" IsVisible="False" />
+            <Label Text="2.TAKIMIN ADI:" />
             <Entry x:Name="TeamTwoEntry" Text="TAKIM B" />
-            <Label x:Name="EntrysEmptyWarning" TextColor="Yellow" />
+            <Label x:Name="EntrysEmptyWarning" Text="Takım adları boş olamaz." TextColor="Yellow" IsVisible="false" />
             <Button x:Name="TeamsStartBtn" Text="BAŞLA" BackgroundColor="CornflowerBlue" Clicked="TeamsStartBtn_Clicked" />
         </VerticalStackLayout>
     </Grid>

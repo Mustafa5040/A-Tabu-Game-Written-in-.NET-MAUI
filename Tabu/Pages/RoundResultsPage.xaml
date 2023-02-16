@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tabu.Pages.RoundResultsPage"
+             Title="RoundResultsPage">
+    <Grid BackgroundColor="#282828">
+        <VerticalStackLayout VerticalOptions="Center">
+            <Button x:Name="RoundResultScoresButton" Text="SKOR" IsEnabled="False" BackgroundColor="White" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*" >
+                <Label x:Name="TeamOneNameLabelScores" Text="TEAM ONE" Grid.Column="0" Grid.Row="0" FontSize="35" HorizontalTextAlignment="Center"/>
+                <Label x:Name="TeamTwoNameLabelScores" Text="TEAM TWO" Grid.Column="2" Grid.Row="0" FontSize="35" HorizontalTextAlignment="Center"/>
+                <Button x:Name="TeamOneScoreButtonScores" Grid.Column="0" Grid.Row="1" MinimumHeightRequest="100"/>
+                <Button x:Name="TeamTwoScoreButtonScores" Grid.Column="2" Grid.Row="1" MinimumHeightRequest="100"/>
+            </Grid>
+            <Button
+            x:Name="RoundAbstractButton"
+            IsEnabled="False" 
+            BackgroundColor="White" 
+            TextColor="Black"
+            HorizontalOptions="CenterAndExpand"
+            Margin="12" />
+            
+            <Grid ColumnDefinitions="*, *, *" RowDefinitions="*,*" >
+                <Label x:Name="TrueLabel" Text="DOĞRU" Grid.Column="0" Grid.Row="0" FontSize="35" HorizontalTextAlignment="Center"/>
+                <Label x:Name="TabuLabel" Text="TABU" Grid.Column="1" Grid.Row="0" FontSize="35" HorizontalTextAlignment="Center"/>
+                <Label x:Name="TotalLabel" Text="TOPLAM" Grid.Column="2" Grid.Row="0" FontSize="35" HorizontalTextAlignment="Center"/>
+                <Button x:Name="TrueAbstractButton" Grid.Column="0" Grid.Row="1" MinimumHeightRequest="100" BackgroundColor="Green" TextColor="White"/>
+                <Button x:Name="TabuAbstractButton" Grid.Column="1" Grid.Row="1" MinimumHeightRequest="100" BackgroundColor="Red" TextColor="White" />
+                <Button x:Name="CurrentAbstractButton" Grid.Column="2" Grid.Row="1" MinimumHeightRequest="100" BackgroundColor="Blue" TextColor="White" />
+            </Grid>
+            <Grid VerticalOptions="EndAndExpand" ColumnDefinitions="*,*" RowDefinitions="*" >
+                <Button x:Name="ContinueGameButton" Text="DEVAM" Grid.Column="0" Grid.Row="0" Clicked="ContinueGameButton_Clicked"/>
+                <Button x:Name="ExitButton" Text="ÇIK" Grid.Column="1" Grid.Row="0" Clicked="ExitButton_Clicked" />
+            </Grid>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

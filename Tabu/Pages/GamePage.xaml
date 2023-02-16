@@ -5,9 +5,11 @@
              x:Class="Tabu.Pages.GamePage"
              Title="GamePage"
              Shell.NavBarIsVisible="False" >
-
     <Grid x:Name="MainGrid" HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand">
-        <Image Source="bgg.jpg" Aspect="AspectFill" />
+        
+        
+        <Image x:Name="backgroundimg" Source="bgg.jpg" Aspect="AspectFill" />
+
         <Grid x:Name="SecondGrid" RowSpacing="0" ColumnDefinitions="*, *, *" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,*" HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand">
             <Label x:Name="TeamNameLabel" Grid.Row="0" Grid.Column="0" FontSize="35" Margin="6"/>
             <GraphicsView x:Name="ProgressView"
@@ -34,19 +36,20 @@
             <Label x:Name="CurrentPointLabel" Grid.Row="0" Grid.Column="2" FontSize="35" Margin="6"/>
 
 
-            <Button x:Name="GuessButon" Margin="0,12" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="1" Grid.Column="1" WidthRequest="300" HeightRequest="200" BackgroundColor="Turquoise"  />
-            <Button x:Name="TabuWord1Button" Margin="0,3" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="2" Grid.Column="1" WidthRequest="300" HeightRequest="75" />
-            <Button x:Name="TabuWord2Button" Margin="0,3" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="3" Grid.Column="1" WidthRequest="300" HeightRequest="75"/>
-            <Button x:Name="TabuWord3Button" Margin="0,3" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="4" Grid.Column="1" WidthRequest="300" HeightRequest="75"/>
-            <Button x:Name="TabuWord4Button" Margin="0,3" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="5" Grid.Column="1" WidthRequest="300" HeightRequest="75"/>
-            <Button x:Name="TabuWord5Button" Margin="0,3" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="6" Grid.Column="1" WidthRequest="300" HeightRequest="75"/>
+            <Button x:Name="GuessButon" Margin="0,12" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="1" Grid.Column="1" WidthRequest="300" HeightRequest="200" IsEnabled="False" BackgroundColor="DeepSkyBlue" FontSize="60" TextColor="White" />
+            <Button x:Name="TabuWord1Button" IsEnabled="False" Margin="0,3" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="2" Grid.Column="1" WidthRequest="300" HeightRequest="75" BackgroundColor="White" TextColor="Black" FontSize="30" />
+            <Button x:Name="TabuWord2Button" Margin="0,2" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="3" Grid.Column="1" WidthRequest="300" HeightRequest="75" BackgroundColor="White" TextColor="Black"  IsEnabled="False" FontSize="30" />
+            <Button x:Name="TabuWord3Button" Margin="0,2" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="4" Grid.Column="1" WidthRequest="300" HeightRequest="75" BackgroundColor="White" TextColor="Black" IsEnabled="False" FontSize="30"/>
+            <Button x:Name="TabuWord4Button" Margin="0,2" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="5" Grid.Column="1" WidthRequest="300" HeightRequest="75" BackgroundColor="White" TextColor="Black" IsEnabled="False" FontSize="30" />
+            <Button x:Name="TabuWord5Button" Margin="0,2" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="6" Grid.Column="1" WidthRequest="300" HeightRequest="75" BackgroundColor="White" TextColor="Black" IsEnabled="False" FontSize="30" />
 
 
             <Button x:Name="TrueButton" Margin="0,6,0,0" Text="DOĞRU "  Grid.Row="7" MinimumWidthRequest="250" MinimumHeightRequest="60" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Green" TextColor="White" Clicked="TrueButton_Clicked" />
             <Button x:Name="TabuButton" Margin="0,6,0,0" Text="TABU" Grid.Row="7" MinimumWidthRequest="250" MinimumHeightRequest="60" Grid.Column="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Red" TextColor="White" Clicked="TabuButton_Clicked" />
-            <Button x:Name="PassButton" Margin="0,6,0,0" Text="PAS"  Grid.Row="7" MinimumWidthRequest="250" MinimumHeightRequest="60" Grid.Column="2" HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="Blue" TextColor="White" Clicked="PassButton_Clicked"/>
+            <Button x:Name="PassButton" Margin="0,6,0,0" Grid.Row="7" MinimumWidthRequest="250" MinimumHeightRequest="60" Grid.Column="2" HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="Blue" TextColor="White" Clicked="PassButton_Clicked"/>
         </Grid>
-      
+        
+    
     </Grid>
    
         

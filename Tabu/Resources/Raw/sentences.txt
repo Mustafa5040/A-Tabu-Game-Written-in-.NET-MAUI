@@ -1,5 +1,383 @@
 Fiil,İş,Oluş,Hareket,Eylem,Sözcük
 Kuşbakışı,Harita,Tepe,Yukarı,Görmek,Kroki
-Armağan,Hediye,Vermek,Almak,Doğum Günü,Sevinmek/Mutlu Olmak
+Armağan,Hediye,Beklemek,Almak,Doğum Günü,Sevinmek/Mutlu Olmak
 Şiir,Şair,Mısra,Dize,Kıta,Dörtlük
 Uyak,Şiir,Dize,Benzerlik,Kafiye,Ses
+Koordinat,Yer,Enlem/Boylam,Harita,Eksen,Nokta
+Bilim,Deney/Gözlem,Makale,Fen,İlerleme,Çağdaşlık
+Isaac Newton,Hareket Yasaları,Elma,Bilim İnsanı,Calculus,Fizik
+Tümeller Problemi,Hristiyan Felsefesi,Kavramcılık,Kavram Realizmi,Sınıf,Üye
+El Kindi,Hudus Delili,Filozof,İslam,Düzen,Yaratıcı
+İhale,Belediye,Devlet,Zarf,Yolsuzluk,Kazanmak
+Adolf Hitler,Almanya,Diktatör,Nazi,Faşizm,Yahudi
+Ziraat,Tarım,Banka,Para,ATM,Kart
+Monoton,Sıkıcı,Aynı,Rutin,Benzer,Sıradan
+Miço,Tayfa,Gemi,Kaptan,Deniz,Yardımcı
+Konvoy,Dizilmek/Sıralanmak,Düğün,Araç/Araba,Cumhurbaşkanı,Yol
+Aşk, Sevgi, İlişki, Evlilik, Romantizm, Bağlılık
+Atletizm, Koşu, Yarışma, Antrenman, Rekabet, Kondisyon
+Avrupa, Kıta, Ülke, Modern, Batı, Birlik
+Bahar, Çiçek, Yaprak, Tomurcuk, Yağmur, Doğa
+Balık, Deniz, Akvaryum, Mercan, Yüzgeç, Sualtı
+Basketbol, Top, Saha, Oyuncu, Pota, Pas
+Başarı, Hedef, Çaba, Disiplin, Yükseliş, Ödül
+Beyin, Zihin, Düşünce, Algı, Sinir, Nöron
+Bilgisayar, Programlama, Klavye, Fare, İnternet, Mustafa
+Bisiklet, Pedal, Tekerlek, Kadro, Yol, Tur
+Buz Hokeyi, Paten, Kaleci, Sopa, Top, Çember
+Caz, Müzik, Ritim, Solo, Konser, Enstrüman
+Dans, Hareket, Müzik, Ritim, Adım, Eğlence
+Deneyim, Tecrübe, Öğrenme, Yaşam, İlerleme, Yaşlılık
+Diş fırçası,Sağlık,İp,Doktor/Hekim,Beyaz,Ağrı
+Doğa, Tabiat, Orman, Dağ, Nehir, Manzara
+Tekvando,Yumruk,Tekme,Kuşak,Dövüş Sanatı,Uzak Doğu
+Edebiyat, Şiir, Roman, Hikaye, Dil, Yazım
+Egzersiz, Fitness, Spor salonu, Aerobik, Kardiyo, Kuvvet
+Ekonomi, Ticaret, Piyasa, Para, Banka, Maliye
+Elektronik, Teknoloji, Devre, Chip, Transistör, Robot
+El Sanatları,Örgü,Nakış,Dikiş,Dokuma,Yapıştırma
+Emeklilik, Yaşlılık, Tasarruf, Gelir, Emek, Hayat
+Evcil hayvan, Kedi, Köpek, Papağan, Akvaryum balığı, Kaplumbağa
+Evlilik, Aşk, Bağlılık, Sevgi, Sorumluluk, Kısıtlanmak
+Evren, Uzay, Galaksi, Gezegen, Yıldız, Genişlemek
+Felsefe, Mantık, Düşünce, Varlık, Gerçek, Thales
+Film, Sinema, Yönetmen, Oyuncu, Senaryo, İzlemek
+Fotoğraf, Makine, Flaş, Poz, Işık, Görüntü
+Futbol, Top, Stadyum, Oyuncu, Hakem, Taraftar
+Gezi, Tatil, Yolculuk, Tur, Harita, Rota
+Gitar, Müzik/Şarkı, Teller, Akor, Solo,Alet/Çalgı
+Gökyüzü, Bulut, Güneş, Ay, Yıldız, Meteor
+Güzellik, Estetik, Cilt bakımı, Saç, Makyaj, Moda
+Halk oyunları, Dans, Müzik, Geleneksel, Gösteri, Kostüm
+Hayat, Yaşam, Anlam, Mutluluk, Zorluk, Başarı
+Hava durumu, Tahmin, Meteoroloji, Rüzgar, Yağmur, Güneş
+İklim, Doğa, Hava, Sıcaklık, Nem, Mevsim
+İletişim, Konuşma, Mesajlaşma, E-posta, Telefon, Sosyal medya
+Kopenhag Kritlerleri,İnsan Hakları,Demokrasi,İfade Özgürlüğü,Hukukun Bağımsızlığı,Avrupa Birliği
+İşletme, Yönetim, Finans, Pazarlama, İş stratejisi, Müşteri
+İzci, Doğa, Kamp, Ateş, Pusula, Macera
+Jimnastik, Spor, Esneme, Paralel bar, Atlama, Denge
+Kahve, İçecek, Filtre, Espresso, Latte, Kafein
+Karikatür, Mizah, Çizgi roman, Karakter, Espri, Dalga
+Kedi, Evcil hayvan, Tüy, Pati, Miyav, Köpek
+Kıyafet, Giyim, Moda, Stil, Tasarım, Tarz
+Kitap, Roman, Hikaye, Yazar, Okuma, Kütüphane
+Korku, Gerilim,Film, Heyecan/Panik, Endişe, Dehşet
+Kültür, Sanat, Dil, Tarih, Gelenek, Miras
+Kumsal, Deniz, Güneşlenme, Şezlong, Plaj voleybolu, Dalga
+Kuyumculuk, Mücevherat, Altın/Gümüş,Takı/Yüzük,Elmas, Kolye/Bilezik
+Liderlik, Takım çalışması, Karar verme, Motivasyon, Yönetim, Önderlik
+Macera, Keşif,Heyecan,Roman,Film/Dizi,Hikaye
+Medya,TV/Gazete,Basın,Kamuoyu,İnternet,Haber
+Mimari, Yapı, Saray,Tasarım, Estetik, Bina
+Moda, Stil, Giyim, Aksesuar, Tasarım, Defile
+Mutfak, Yemek, Pişirme, Fırın/Ocak, Tencere/Tabak, Buzdolabı/Bulaşık Makinesi
+Mühendislik, Makine, Elektrik, Bilgisayar, Yapı, Uzay
+Nefes, Yoga, Meditasyon, Stres, Ciğer, ATP
+Okyanus, Denizaltı, Su altı, Mercan, Balina, Dalgıçlık
+Otomobil, Araba, Sürüş, Yakıt, Tekerlek, Hız
+Öğrenme, Eğitim, Bilgi, Ders, Öğretmen, Öğrenci
+Örgü, Elişi, İplik Şiş, Kazak, Bere, Patik
+Para, Ekonomi, Borsa, İşletme, Yatırım, Banka
+Performans, Sahne, Tiyatro, Dans, Konser, Oyun
+Pilates, Fitness, Egzersiz, Esneme, Güçlendirme, Beden farkındalığı
+Psikoloji, Zihin sağlığı, Terapi, Stres, Davranış, Ruhsal hastalık
+Reklam, Pazarlama, Tanıtım, Satış, Kampanya, Marka
+Restoran, Yemek, İçecek, Garson, Menü, Şef
+Robotik, Yapay zeka, Endüstriyel otomasyon, Programlama, Sensör, Mekatronik
+Sağlık, Hastalık, İlaç, Doktor, Hastane, Sağlık sigortası
+Sanat, Resim, Heykel, Fotoğraf, Sergi, Sanatçı
+Sebze, Meyve, Organik, Market, Bahçe, Tarım
+Sevgi, Aşk, İlişki, Evlilik, Arkadaşlık, Flört
+Sinema, Film, Yönetmen, Senaryo, Aktör, Oscar
+Siyaset, Politika, Devlet, Seçim, Demokrasi, Platon
+Spor, Futbol, Basketbol, Voleybol, Tenis, Yüzme
+Tarih, Geçmiş, Arkeoloji, Kaynak, Savaş, İmparatorluk
+Tatlı, Şekerleme, Çikolata, Dondurma, Pasta, Kurabiye
+Teknoloji, İnovasyon, Bilgi teknolojisi, İnternet, Bilim, Mustafa
+Tiyatro, Oyun, Sahne, Perde, Rol, Kostüm
+Turizm, Gezi, Seyahat, Rehber, Turist, Tatil köyü
+Uçak, Havacılık, Pilot, Uçuş, Hava yolu,Bilet
+Uzay, Astronomi, Gezegen, Yıldız, Galaksi,Boşluk
+Yarış, Spor, Atletizm, Pist, Koşu, Zafer
+Yasa, Hukuk, Adalet, Avukat, Ceza, Mahkeme
+Yerel yemek, Geleneksel lezzet, Mutfak, Bölge, Damak tadı, Restoran
+Yolculuk, Seyahat, Tren, Otobüs, Araba, Uçak
+Makyaj,Yüz, Cilt bakımı, Kozmetik, Parfüm, Güzellik
+Yüzme, Havuz, Deniz, Su sporları, Palet, Dalış
+Yürüyüş, Spor, Egzersiz, Sağlık, Yol, Ayakkabı
+Zaman, Saat/Dakika/Saniye,Takvim, Geçmiş,Boyut,Mekan
+Zeka, Zekâ testi, Beyin, Hafıza, Oyun,Akıl
+Zeytin, Zeytinyağı, Zeytin ağacı, Zeytin yaprağı, Zeytin ezmesi, Akdeniz mutfağı
+Zombi, Korku, Hayatta kalma, Bilim kurgu, Ölü, Veba
+Zorlu, Zorlayıcı, Yorucu, Engelli, Ağır, Meşakkatli
+Hava durumu, Meteoroloji, Tahmin, Isı, Nem, Rüzgar
+Helikopter, Uçuş, Pervane, Taşıt, Kurtarma, Askeri
+İlaç, Hap, Bağımlılık, Reçete, Yan etki,Doz
+İletişim, Konuşma, Dil, Sosyal medya, Mesajlaşma, Etkileşim
+İngilizce, Dil öğrenme, Kelime, Gramer, İfade, İletişim
+İşletme, Yönetim, Maliyet, Pazarlama, Satış, Kar
+Japonya,Manga,Anime,Atom Bombası,Kamikaze,Asya
+Kafein, Kola, Kahve, Çay, Enerji içeceği, Uyarıcı
+Kano, Su sporu, Nehir, Göl, Rekreasyon, Kürek
+Karate, Dövüş sanatı, Spor, Savunma, Teknik, Hareket
+Kayak, Kış sporu, Kayak merkezi, Kayağı, Kar, Kayak tatili
+Kaynak kodu,Programlama,Yazılım geliştirme,Kodlama,Açık kaynak,İşletim sistemi
+Keman, Müzik aleti, Yaylı çalgılar, Konçerto, Klasik müzik, Nota
+Kıyafet, Moda, Giyim, Stil, Tasarım, Aksesuar
+Klima, Isıtma, Soğutma, Havalandırma, Vantilatör,Isı
+Kriptografi, Güvenlik, Veri koruma, Şifreleme, Deşifreleme, Veri güvenliği
+Kuaför, Saç kesimi, Saç boyama, Şampuanlama, Saç şekillendirme, Kuaför malzemeleri
+Kültür, Sanat, Gelenek, Tarih, Müze, Festival
+Küresel ısınma, İklim değişikliği/Krizi, Sera gazı, Fosil yakıtlar, Buzulların Erimesi, Kutup Ayısı
+Labirent, Bulmaca,Oyun,Çizgi,Yol,Çözüm
+Limon, Meyve, C vitamini, Limon suyu, Limon kabuğu, Limon ağacı
+Lise, Eğitim, Gençlik, Öğrenci/Okul/Sınıf, Dersler/Sınavlar,Çalışmak
+Maden, Kazı, Mineral, Rezerv, Yer altı kaynakları,Altın/Elmas/Demir
+Mantar, Mantar yemeği, Eşeysiz Üreme, Orman, Zehir, Şapka
+Markalaşma, Reklam, Pazarlama, Müşteri sadakati, Tanıtım, İmaj
+Matematik, Sayılar, Formüller, Geometri, İşlemler, Fonksiyonlar
+Mimarlık, Yapı, Planlama, Mimari stil, Tasarım, Estetik
+Mobilya, Dekorasyon, İç tasarım, Sandalye, Koltuk, Masa
+Modüler yapı, Prefabrik, Yapı malzemeleri, Modüler ev, Yapı sistemleri, Modüler inşaat
+Oksijen, Element, Hava, Atmosfer, Su,Solunum
+Okyanus, Deniz, Mercan resifleri, Dalgalar, Su altı yaşamı, Balıkçılık
+Olimpiyatlar, Spor etkinliği, Uluslararası, Olimpiyat bayrağı, Madalya, Olimpiyat stadyumu
+Opera, Şan, Sahne sanatları, Klasik müzik, İtalyan kültürü, Opera bale
+Ordu, Asker, Silah, Savaş uçağı, Tank, Cephe hattı
+Otobüs, Toplu taşıma, Şehir içi, Sefer, Durak, Otobüs bileti
+Oyun, Eğlence, Strateji, Kart oyunu, Bilgisayar oyunu, Oyun kuralları
+Parfüm, Koku, Deodorant, Parfüm şişesi, Güzel,Aroma
+Peyzaj, Bahçe tasarımı, Doğal manzara, Park, Bahçe dekorasyonu, Peyzaj mimarisi
+Pilates, Egzersiz, Esneme, Fitness, Vücut sağlığı, Pilates matı
+Pilav, Yemek, Pirinç, Türk mutfağı, Nohutlu/Pirinç pilav, Etli pilav
+Plaj, Tatil, Deniz, Kum, Şezlong, Plaj voleybolu
+Planlama, Proje yönetimi, İş stratejisi, İşletme, Gelişim, Planlama aşamaları
+Popüler kültür, Medya, Trendler, Sanat, Moda, Eğlence
+Radyo, Haber, Müzik, Frekans, Yayın, Radyo programı
+Restoran, Yemek, Menü, Garson, Mutfak, Restoran dekorasyonu
+Roman, Edebiyat, Yazar, Öykü, Karakter, Macera
+Satranç, Tahta oyunu, Strateji, Şah/Vezir, Mat, Kale
+Sigara,Tütün,İçmek,Çekmek,Pasif İçici,Çakmak
+Sivil toplum örgütü, Gönüllülük,Yardım,Dayanışma,Sendika,STK
+Şarap, İçki, Üzüm, Şarap tadımı, Şarap kadehi, Şarap Şişesi
+Şehir,İl,Meydan,Merkez,Çarşı,Mimari
+Takı, Mücevher, Kolye, Bileklik, Küpe, Yüzük
+Tarım, Çiftlik, Tohum, Hasat, Tarım makineleri, Tarım ilacı
+Tatil, Turizm, Seyahat, Konaklama, Gezi, Yolculuk
+Televizyon, Program, Kanal, Dizi, Ekran, Kablolu Yayın
+Toplum, Sosyal yaşam, Toplumsal cinsiyet, Toplumsal değişim, Toplumsal hareketler, Toplumsal farkındalık
+Turizm, Seyahat, Turist, Gezi, Konaklama, Tatil köyü
+Uzay, Astronomi, Yıldızlar, Galaksi, Uzay keşfi, Uzay araçları
+Yalıtım, Yapı malzemesi, Isı yalıtımı, Ses yalıtımı, Yalıtım çeşitleri, Yalıtım uygulamaları
+Yoga, Meditasyon, Nefes egzersizi, Esneme, Yoga matı, Yoga pozları
+Yönetim, İşletme yönetimi, Liderlik, Strateji, İşletme, Yönetim becerileri
+Yüzme, Spor, Rekabet, Havuz, Yüzme stili, Yüzme teknikleri
+Zeka oyunları, Mantık oyunları, Bulmaca, Sudoku, Kelime oyunları, Zeka geliştirme oyunları
+Zeytin, Zeytinyağı, Zeytin ağacı, Zeytin hasadı, Zeytin yaprağı, Zeytin bahçesi
+Zooloji, Hayvanlar, Omurgalılar, Omurgasızlar, Hayvan davranışları, Biyolojik çeşitlilik
+Zorbalık, Şiddet, Taciz, Mobbing, İntikam, Ayrımcılık
+İnsan hakları, Özgürlük, Adalet, Eşitlik, Demokrasi, Hak savunuculuğu
+İşbirliği, Ekip çalışması, Ortaklık, Birlikte çalışma, İş ortamı, Verimlilik
+İşletme, Şirket, Girişimcilik, Pazarlama, Finans, İşletme stratejisi
+İstanbul, Tarih, Kültür, Boğaziçi, Saraylar, İstanbul sokakları
+İtfaiye, Yangın, Kurtarma, Acil durum, İtfaiye aracı, İtfaiye ekipmanı
+İzmir, Tarih, Kültür, Konak, Alsancak, İzmir limanı
+İzole, Karantina, Sosyal izolasyon, Kendine yeterlilik, Tek başına yaşama, Yalnızlık
+Şarkı, Müzik, Albüm, Şarkı yazarlığı, Şarkı söyleme, Konser
+Şehir, Kent planlaması, Ulaşım, Yeşil alanlar, Kentsel dönüşüm, Şehir hayatı
+Şifalı bitkiler, Alternatif tıp, Doğal tedavi, Bitki çayları, Bitkisel ilaçlar, Aromaterapi
+Şiir, Şair, Mısra, Divan edebiyatı, Modern şiir, Şiirsel anlatım
+Şirketler, Şirket yönetimi, Hisse senedi, Yatırım, Şirket finansmanı, Şirket tarihi
+Şişmanlama, Obezite, Diyet, Egzersiz, Beslenme, Yaşam tarzı
+Şömine, Yakıt, Odun, Şömine aksesuarları, Şömine temizleme, Şömine tadilatı
+Tüketim, Tüketici davranışları, Pazarlama, Reklam, Marka, Tüketim toplumu
+Üniversite, Öğrenim, Akademik program, Kampüs, Üniversite yaşamı, Eğitim
+Üretim, Sanayi, Fabrika, İmalat, Endüstriyel üretim, Üretim teknolojileri
+Üzüntü, Keder, Depresyon, Üzgün, Hüzün, Acı
+Vakıf, Sivil toplum örgütü, Hayırseverlik, Bağış, Toplumsal sorumluluk, Vakıf tarihi
+Yabancı dil, Dil öğrenimi, Yabancı dil sınavı, Dil eğitimi, Dil pratik, Yabancı dil çevirisi
+Yaralanma, Tedavi, Sağlık, Rehabilitasyon, Fizik tedavi, Kırık
+Yasa, Kanun, Mevzuat, Yargı, Ceza hukuku, İdari hukuk
+Yatırım, Finans, Borsa, Yatırım araçları, Portföy yönetimi, Yatırım riski
+Yayıncılık, Yayınevi, Kitap, Editörlük, Okuma, Yazarlık
+Yemek, Tarif, Restoran, Pişirme, Gurmeler, Yemek kültürü
+Yenilik, İnovasyon, Teknoloji, Ar-Ge, İcat, Keşif
+Yetenek, Beceri, Sanat, Müzik, Spor, Performans
+Yılbaşı, Yeni yıl, Tatil, Aile, Noel Baba, Yılbaşı süslemeleri
+Yoğun bakım, Sağlık hizmeti, Tıbbi cihaz, Hemşire, Doktor, Yoğun bakım ünitesi
+Yoga, Meditasyon, Beden farkındalığı, Yoga stili, Yoga pozları, Yoga ekipmanları
+Zeka, Zeka testi, Zeka oyunları, Akıl yürütme, Düşünme, Problem çözme
+Zenginlik, Varlık, Refah, Para, Maddi durum, Lüks
+Zihin sağlığı, Psikoloji, Depresyon, Anksiyete, Stres, Zihinsel sağlık
+Ziyaret, Turistik yer, Gezgin, Gezi, Yeni yerler keşfetme, Seyahat edilen yer
+Zorbalık, Mobbing,Taciz,Okul,Akran,Çocuk
+Zorunlu eğitim, Okul, Ders, Sınav, Eğitim, Çocuk
+Adalet, Hukuk, Hak, Eşitlik, Adalet sistemi, Mahkeme
+Aile, Anne, Baba, Evlilik, Kardeş, Akraba
+Aksesuar, Takı, Çanta, Ayakkabı, Şapka, Kemer
+Mantık,Bilim,Kuram,Akıl Yürütme,Felsefe,Aristo
+Akustik, Müzik, Ses kaydı, Konser, Mikrofon, Enstrüman
+Aktif yaşam, Spor, Egzersiz, Sağlıklı yaşam, Fitness, Spor salonu
+Alışveriş, Mağaza, Online alışveriş, Pazarlık, Alışveriş merkezi, Satın alma
+Altın, Değerli metal, Yatırım, Takı, Külçe, Madencilik
+Ameliyat, Cerrahi müdahale, Hastane, Ameliyat öncesi, Ameliyat sonrası, Anestezi
+Amatör, Hobiler, Yeni başlayanlar, Spor, Yetenek, Amatör videolar
+Amele, İşçi, İş, Yapı, İnşaat, Kaynak
+Anı, Hatıra, Geçmiş, Bellek, Fotoğraf, Hafıza
+Animasyon, Çizgi film, Film, Bilgisayar, Çizim, 3D modelleme
+Aperatif, Atıştırmalık, Meze, İkramlık, Yiyecek, Yemek tarifi
+Araba, Otomobil, Sürüş, Yolculuk, Sürücü, Araba bakımı
+Arama motoru, İnternet, Google, Web sayfası, Bilgi, Sorgu
+Arkeoloji, Tarih, Kazı, Arkeolojik alan, Antik dönem, Arkeolog
+Asansör, Bina, Kat, Yükseklik, İnme/Çıkma,Eylemsizlik Kuvveti
+Astroloji, Burçlar, Yıldız haritası, Bilim Dışı, Astrolog, Gökyüzü
+Aşçı, Yemek, Restoran, Mutfak, Pişirme, Yiyecek
+Ata sporları, Binicilik, At yarışı, At eğitimi, Atlı sporlar, At binme
+Atık, Çöp, Geri dönüşüm, Atık yönetimi, Geri kazanım, Atık su
+Atom, Fizik, Kimya, Çekirdek, Madde, Nükleer enerji
+Av, Avcılık, Hayvan, Tüfek, Doğa, Yaban hayatı
+Avukat, Hukuk, Dava, Mahkeme, Ceza hukuku, Hukuk fakültesi
+Ayakkabı, Moda, Spor ayakkabı, Topuklu ayakkabı, Terlik, Sandalet
+Aydınlatma, Lamba, Işık, Elektrik, Aydınlatma tasarımı, Aydınlatma teknolojisi
+Ayı, Hayvan, Vahşi hayvan, Doğa, Orman, Kış uykusu
+Ayrımcılık, Eşitlik, Adalet, Irk, Cinsiyet, Toplumsal adalet
+Ayrılık, Boşanma, Sevgili, İlişki, Yalnızlık, Ayrılık acısı
+Bahar, Mevsim, Çiçek, Yenilenme, Doğa, Ilık hava
+Bahçe, Çiçek, Bitki, Yeşil, Peyzaj, Bahçe tasarımı
+Bahis, Kumar, İddaa, At yarışı, Şans oyunları, Bahis sitesi
+Bakım, Sağlık, Hastalık, Tedavi, Diş bakımı, Cilt bakımı
+Balıkçılık, Olta, Balık tutma, Su, Deniz, Balıkçı
+Balo, Dans, Kıyafet, Müzik, Parti, Toplantı
+Balon, Renkli, Şişirme, Uçan, Çocuklar, Parti süslemeleri
+Banka, Para, Kredi, Hesap, Yatırım, Banka kartı
+Basketbol, Top, Basketbol sahası, Pota, Basketbolcu, Maç
+Başarı, Hedef, Kazanç, İşletme, İş, Mutluluk
+Başarısızlık, Hata, Başarısız, Hayal kırıklığı, Yenilgi, Bahtsızlık
+Başkent, Şehir, Devlet, Ülke, Hükümet, Başkan
+Bayram, Tatil, Şeker, Aile, İslam, Milli bayramlar
+Beden eğitimi, Spor, Okul, Antrenman, Fiziksel aktivite, Fitness
+Bedensel engellilik, Özürlülük, Tekerlekli sandalye, Sakatlık, Engelli, Rehabilitasyon
+Belediye, Yerel yönetim, Şehir, Hizmetler, Belediye başkanı, Kent
+Belgesel, Film, Doğal yaşam, Tarih, Hayvanlar, İnsanlar
+Berber, Saç kesimi, Erkek kuaförü, Sakal traşı, Saç boyama, Tıraş
+Beslenme, Diyet, Sağlıklı beslenme, Gıda, Protein, Vitamin
+Beyin, Zeka, Düşünce, Akıl, Sinir sistemi, Hafıza
+Bilardo, Top, Oyun, Bilardo salonu, Masa, Bilardo sopası
+Bilet, Konser, Tiyatro, Sinema, Uçak, Seyahat
+Bisiklet, Spor, Pedal, Bisiklet yolu, Tırmanma, Bisiklet yarışı
+Bitki, Bahçe, Ağaç, Yeşillik, Çiçek, Botanik
+Böcek, Hayvan, Arı, Kelebek, Örümcek, Karınca
+Bowling, Top, Pim, Bowling salonu, Oyun, Vurmak/Atmak
+Börek, Yemek, Hamur işi, Peynirli börek, İçli köfte, Su böreği
+Briç, Kart oyunu, Oyun, Masada oynanan oyun, Şans, Zeka
+Büyüme, Gelişme, İlerleme, İnsan gelişimi, Evrimsel psikoloji, Zihinsel gelişim
+Büyükannesinden yemek tarifleri, Yemek, Aile, Tarifler, Geçmiş, Geleneksel yemekler
+Cep telefonu, İletişim, Akıllı telefon, Mobil, Telefon görüşmesi, Uygulama
+Cerrahi, Ameliyat, Tıp, Hastane, Doktor, Anestezi
+Çevre, Doğal kaynaklar, Doğa,Orman/Ağaç,Ortam,Temiz/Kirli
+Çikolata, Tatlı, Kakao, Bitter, Sütlü, Şekerleme
+Çin, Asya, Pekin, Şangay, Sedir, Uzakdoğu
+Çizgi film, Animasyon, Karikatür, Film, Dizi, Kahraman
+Daktilo, Yazmak, Klavye, Ofis, Makine, Katip
+Dans, Ritim, Müzik, Topluluk, Hareket, Performans
+Dayanıklılık, Kuvvet, Egzersiz, Vücut geliştirme, Kardiyo, Kuvvet antrenmanı
+Değer, Fiyat, Maddi değer, Saygı, Değerlendirmek, Önemli
+Deniz, Okyanus, Plaj, Dalga, Denizaltı, Balıkçılık
+Deprem, Sarsıntı, Richter ölçeği, Fay hattı, Doğal afet, Tsunami
+Diğer, Öteki, Ayrıca, Ek olarak, Başka, Bambaşka
+Dil, Konuşma, Dilbilgisi, Dil öğrenme, Deyim, Yabancı dil
+Dinozor, Fosil, Tarih öncesi, Paleontoloji, Teropod, Tyrannosaurus
+Diş, Ağız, Diş fırçası, Diş hekimi, Diş çekimi, Diş ağrısı
+Divan, Mobilya, Oturma odası, Kanepe, Koltuk, Sandalye
+Doğal yaşam, Çevre, Doğa, Ekosistem, Biyoçeşitlilik, Yaşam alanı
+Doğum, Bebek, Doğum günü, Aile, Kadın doğum uzmanı, Hamilelik
+Dolma, Yemek, İçi doldurulmuş sebze, Dolma yaprağı, Acılı dolma, Sarma
+Dondurma, Tatlı, Dondurucu, Buzlu, Aroma, Soğuk
+Dünya, Gezegen, Evren, Uzay, Yeryüzü, Ay
+Dünya mirası, Tarihi eser, UNESCO, Turizm, Kültür varlığı, Tarihi yerler
+Dünya savaşı, Hitler, İkinci Dünya Savaşı, Nazi Almanyası, Müttefik devletler, Sovyetler Birliği
+Dünya ticareti, İhracat, İthalat, Ticaret, Global ekonomi, Dış ticaret
+Duygu, His, İfade, Sevgi, Korku, Heyecan
+Eğitim, Öğrenme, Okul, Ders, Öğretmen, Sınav
+Eğlence, Keyif, Zevk, Hobi, Oyun, Etkinlik
+Ekmek, Gıda, Unlu mamuller, Kahvaltı, Poğaça, Fırın
+Ekonomi,Maliye,Piyasa,Muhasebe,Dolar,Borsa
+Şarkı, Sözler, Melodi, Müzisyen, Albüm, Şarkıcı
+Kamera, Lens, Odak, Deklanşör, Flaş, Fotoğrafçı
+Dünya, Gezegen, Kıta, Okyanus, Atmosfer, Coğrafya
+Bilgisayar, Klavye, Fare, Monitör, İşlemci, Yazılım
+Futbol, ​​Krampon, Hakem, Saha, Klüp, Dünya Kupası
+Şef, Mutfak,Tarif,Pişirmek,Restoran,Garson
+Ev, Çatı,Pencere, Kapı, Baca, Oturma odası
+Para, Banka, Kredi kartı, Nakit, Yatırım, Borsa
+Öğretmen, Sınıf, Ders,Tahta, Öğrenci, Eğitim
+Avukat, Mahkeme Salonu, Yargıç/Savcı/Hakim, Katip, Adalet, Dava
+Yağmur, Bulut, Gök Gürültüsü, Şimşek, Şemsiye, Fırtına
+Güneş, Isı, Işınlar, Bronzlaşma,Sıcak,Uzay
+Piyano, Tuşlar, Notalar, Pedal, Senfoni, Mozart
+Çiçek, Yaprak, Kök, Polen, Bahçe, Buket
+Zaman, Saat/Dakika/Saniye, Boyut, Kronometre, Takvim, Kum Saati
+Doktor, Stetoskop, Reçete, Hastane, Hasta, Tıp
+Bira,Rakı,Bar,İçki,Alkol,Şarap
+Tren, Demiryolu, Ray, Kondüktör, İstasyon,Buhar
+Evren, Galaksi, Yıldızlar, Kara delik, Astronomi, Teleskop
+Plaj, Sandcastle, Sörf, Voleybol, Deniz Kabukları, Cankurtaran
+Dedektif, İpucu, Soruşturma, Kanıt, Şüpheli, Gizem
+kış, kar tanesi, kayak, buz pateni, kardan adam, şömine
+Cep telefonu, Şarj cihazı, Kısa mesaj, Zil sesi, Uygulamalar, Bluetooth
+Hayvanat Bahçesi, Hayvan, Kafes, Safari, Yaban Hayatı, Koruma
+Dans, Bale, Koreografi, Müzik, Performans, Stüdyo
+Ateş, Alev, Duman, Isı, Kömür, Şömine
+Bisiklet, Kask, Zincir, Pedal, Dişli, Dağ yolu
+Uçak, Yolcu, Kanat, Uçuş Görevlisi, Kokpit, Seyahat
+Müzik, Tür, Grup, Konser, Enstrüman, Şarkı
+Sirk, Palyaço, Trapez, Sirk Sorumlusu, Akrobat, İp
+Bahçe, Kürek, Toprak, Tohum, Sulamak/Ekmek, Ev
+Buz, Buzul, Hokey, Buz Pateni, Su, Kutup
+Bebek, Bebek Bezi, Biberon,Genç,Doğmak,Aciz
+Okyanus, Mercan,Deniz, Martı, Dalga,Su
+Yol, Asfalt, Araba, Trafik, İşaret, Şerit
+Korku, Hayalet, Örümcek, Cesaret, Anksiyete, Panik
+Köprü, Nehir, Çelik, Kemer, Göl, Trafik
+Fırın, Ekmek, Pasta, Çörek, Pide,Simit
+Sirk, Palyaço, Trapez, Aslan, Akrobat, İp
+Fotoğrafçılık, Lens, Odak, Deklanşör, Flaş, Kamera
+Boyama, Fırça, Tuval, Palet, Müze, Sanatçı
+Besim Tibuk,Liberal Demokrat Parti,Liberalizm,Yunus,Siyasetçi,Satmak
+Ülke, Bayrak, Marş, Kültür, Miras, Gelenek
+Siber Güvenlik, Şifreleme, Şifre, Güvenlik Duvarı, Hacker, Kimlik Avı
+Dans, Müzik, Koreografi, Ritim, Performans, Bale
+Tatlı, Kek, Dondurma, Turta, Çikolata,Pasta
+Disney, Tema parkı, Film, Karakter, Mickey Mouse, Animasyon
+Belgesel, Film, Hayvanlar Alemi, TRT, Röportaj, Vahşi Yaşam
+Köpek, Cins, Evcil Hayvan, Havlama,Kedi,Mama
+Drama, Oyun, Oyuncu, Duygu, Çatışma, Senaryo
+Araba,Sürmek, Yol, Trafik, Ehliyet,Otomobil
+Eğitim, Öğrenme, Öğretmen, Öğrenci, Okul, Müfredat
+Elektronik, Gadget'lar, Bilgisayar, Akıllı Telefon, Kamera, Yenilik
+Emoji, Simge, Sembol, İfade, Suratlar, Sosyal medya
+Enerji, Elektrik, Yenilenebilir, Fosil yakıt, Nükleer, Enerji santrali
+çevre, Doğa, Ekosistem, Yaban Hayatı, İklim, Koruma
+Egzersiz, Egzersiz, Fitness, Spor Salonu, Sağlık, Ter
+Peri masalları, Hikaye, Prenses, Peri, Sihir, Fantastik
+Aile, Ebeveyn, Çocuk, Kardeş, Aşk, Yuva
+Moda, Giyim, Stil, Tasarımcı, Podyum, Trend
+Festival, Müzik, Kutlama, Kültür, Dans, Yemek
+Film endüstrisi, Hollywood, Oyuncu, Yönetmen, Gişe, Senaryo
+Balık Tutma, Yakalamak, Yem, Kanca, Makara, Çubuk
+Fitness, Antrenman, Spor Salonu, Sağlık, Egzersiz, Halter
+Futbol, ​​Oyun Kurucu, Touchdown, Kask, Alan, Super Bowl
+Formula 1, Yarış, Araba, Sürücü, Devre, Şampiyon
+Fransa, Paris, Eyfel Kulesi, Şarap, Peynir, Kültür
+Arkadaşlık, İlişki, Güven, Sadakat, Bağ, Dostluk
+Game of Thrones, Fantastik, Drama, Dizi, Karakter, Kitap
+Oyun, Konsol, PC, eSpor, Yayıncı, Video oyunu
+Golf, Kulüp, Top, Delik, Fairway, Salıncak
+Grafik tasarım, Örnekleme, Tipografi, Logo, Markalaşma, Sanat
+Yunanistan, Atina, Antik, Mitoloji, Kurtuluş Savaşı, Ege Adaları
+Cadılar Bayramı, Kostüm, Şeker mi şaka mı, Balkabağı, Şeker, Korku
+Harry Potter, Sihirbaz, Hogwarts,Büyü,Dumbledore,Asa
+Sağlık, Zindelik, Fitness, Beslenme, Tıp, Yaşam Tarzı
+Binicilik, At, Dörtnal, Dizginlemek, Eyer, Nal
+Otel, Konaklama, Rezervasyon, Oda, Tatil, Resepsiyon

@@ -3,16 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Tabu.AboutPage"
              Title="HAKKINDA">
-    <ScrollView >
+    
         <Grid>
-            <Image Source="bgg.jpg" Aspect="AspectFill" HorizontalOptions="Start"/>
+        <Image Source="bgg.jpg" Aspect="AspectFill" HorizontalOptions="Center"/>
+        <ScrollView >
             <VerticalStackLayout>
                 <Image Source="tabu_logo.png" />
-                <Label Text="Tabu Oyunu Alpha  v0.1" HorizontalTextAlignment="Center" />
-                <Label Text="© 2023 Mustafa Dursun. Tüm hakları saklıdır." HorizontalTextAlignment="Center" />
+                <Label x:Name="VersionLabel"  HorizontalTextAlignment="Center" />
+                <Label Text="© 2023 Mustafa Dursun. Bu oyun açık kaynaklıdır ve Github üzerinde yayınlanmıştır." HorizontalTextAlignment="Center" />
+                <Label Text="github.com/Mustafa5040/A-Tabu-Game-Written-in-.NET-MAUI" HorizontalTextAlignment="Center" TextColor="Blue"/>
             </VerticalStackLayout>
-        </Grid>
+        </ScrollView>
+    </Grid>
         
-    </ScrollView>
+    
     
 </ContentPage>

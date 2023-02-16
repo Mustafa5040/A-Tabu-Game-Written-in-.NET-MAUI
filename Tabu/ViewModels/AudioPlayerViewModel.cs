@@ -1,5 +1,4 @@
 ﻿using Plugin.Maui.Audio;
-using System.Diagnostics;
 
 namespace Tabu.ViewModels
 {
@@ -7,18 +6,18 @@ namespace Tabu.ViewModels
     {
         public IAudioPlayer _player;
         public string SelectedSoundFileName;
-        public async void AudioFunctions(string MusicFunctions,bool loop=false)
+        public async void AudioFunctions(string MusicFunctions, bool loop = false)
         {
-            if(_player == null)
+            if (_player == null)
             {
-            this._player = AudioManager.Current.CreatePlayer(await FileSystem.OpenAppPackageFileAsync(SelectedSoundFileName));
+                _player = AudioManager.Current.CreatePlayer(await FileSystem.OpenAppPackageFileAsync(SelectedSoundFileName));
             }
             if (MusicFunctions == "Play")
             {
                 _player.Loop = true;
                 _player.Play();
             }
-            if(MusicFunctions == "Stop")
+            if (MusicFunctions == "Stop")
             {
                 _player.Stop();
             }
@@ -31,11 +30,11 @@ namespace Tabu.ViewModels
         public AudioPlayerViewModel(string filename)
         {
             SelectedSoundFileName = filename;
-            AudioFunctions("NaN");   
+            AudioFunctions("NaN");
         }
         public bool IsPlaying()
         {
-                return _player.IsPlaying;
+            return _player.IsPlaying;
         }
 
     }
